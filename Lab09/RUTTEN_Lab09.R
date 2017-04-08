@@ -13,7 +13,7 @@ DateTimeDataVec <- as.vector(DateTimeData)
 DateTimeDataVec
 
 #thinking about using strptime, but I got a bunch of NA's
-#Update: fixed by adding %H:%M :)
+#Update: fixed by adding %H:%M 
 StrpTimeData <- strptime(DateTimeDataVec,format="%d/%m/%Y %H:%M")
 StrpTimeData
 
@@ -23,7 +23,22 @@ veryscaryfunction <- function(starttime,endtime){
   upDateendtime <- strptime(endtime,format="%d/%m/%Y %H:%M")
   timeDif <- upDateendtime - upDatestarttime
 }
-veryscaryfunction()
+
+#an attempt to test it out gave me an error code that said:
+#Error in DateTimeDataVec$DateTime : 
+# $ operator is invalid for atomic vectors
+#Realizing that I gotta alter the format of my input vector so it is no longer "atomic"?
+
+#an attempt at making the vector anything but atomic haha
+DateTimeDataNumeric <- as.numeric(DateTimeData)
+
+#changing the function to as.numerics because I keep getting an error for having atomic vectors
+veryscaryfunction <- function(starttime,endtime){
+  upDatestarttime <- as.numeric(strptime(starttime,format="%d/%m/%Y %H:%M"))
+  upDateendtime <- as.numeric(strptime(endtime,format="%d/%m/%Y %H:%M"))
+  timeDif <- upDateendtime - upDatestarttime
+}
+veryscaryfunction(DateTimeDataNumeric$DateTime[1], DateTimeDataNumeric$DateTime[2])
 
 #started to think about looping to fix the error in date variables (ie, /13 vs /2013)
 for(i in 1:length(importedData[,6])){
