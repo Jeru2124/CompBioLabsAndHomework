@@ -28,3 +28,6 @@ I) Create a value that will allow for simple computation of body proportions (a 
 II) Model a simple regression line that describes the correlation between body proportions and regional temperature.
 
 III) Create a probability distribution of body proportions as they relate to the geographical temperature gradient, using the Poisson distribution model. Because the Poisson distribution requires discrete variables, I may likely have to organize the data into benchmarks. If this is not reflective of the data, I will use a continuous probability distribution. 
+
+**References**
+Symonds, M.R.E., and G.J. Tattersall. 2010. Geographical Variation in Bill Size across Bird Species Provides Evidence for Allen’s Rule. The American Naturalist 176:188–197. http://datadryad.org/resource/doi:10.5061/dryad.1421
