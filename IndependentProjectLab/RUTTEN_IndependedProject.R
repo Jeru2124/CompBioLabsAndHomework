@@ -1,10 +1,9 @@
 #Read csv file
 
-DataCsv <- read.csv("~/Courses/EBIO4420CompBio/CompBioLabsAndHomework/IndependentProjectLab/SymondsTattersall.csv")
+DataCsv <- read.csv(file.choose("SymondsTattersall.csv"))
 #I was getting an "invalid graphics state" error after finalizing the read.csv. To fix I used the following code:
-#It works well on my laptop.
 dev.off()
-
+#Note: It worked on my laptop.
 
 #PART I: Create objects from data to use in code 
 
@@ -47,9 +46,9 @@ linreg <- lm(formula = log(ProportionRatio) ~ TempVector, data = dfofPropTemps)
 plot(linreg)
 #the lm() function runs through each plot with <Return> command, so the next blank lines allow
 #each plot to output. 
-
-
-
+#
+#
+#
 #The Proportions Ratio is logarithmically transformed to better illustrate the indirect correlation between
 #temperature and body proportion
 y <- log(dfofPropTemps$ProportionRatio)
