@@ -1,4 +1,4 @@
-## Evidence for Allen's Rule Across Species of Aves: Modeling Theoretical Temperature Gradients for Various Species of Birds given Morphological Proportions
+## Evidence for Allen's Rule Across Species of Aves: Modeling Theoretical Temperature Gradients for Various Species of Birds Given Variation in Morphological Proportions
 ________________________________
 ### **Biological question**
 
@@ -48,17 +48,20 @@ The produced matrix of absence/presence data was imaged and combined with the im
 
 ### **Results and conclusions**
 
-The following graphs depict various generated matrices produced by the loop for different species.
+The following graphs depict various generated matrices produced by the loop for different species. Dark marks signify the species presence at the given temperature indicated by the x axis. There exist 10 replicates along the y axis to indicate variabilities and consistencies in the existence pattern. The likelihood that a species exist at a given temperature are highest closest to the observed temperature for the species. 
 
 ![screenshot](https://raw.githubusercontent.com/Jeru2124/CompBioLabsAndHomework/master/IndependentProjectLab/TheoreticalTempGradientSp27.jpeg)
 ![screenshot](https://raw.githubusercontent.com/Jeru2124/CompBioLabsAndHomework/master/IndependentProjectLab/TheoreticalTempGradientSp23.jpeg)
 ![screenshot](https://raw.githubusercontent.com/Jeru2124/CompBioLabsAndHomework/master/IndependentProjectLab/TheoreticalTempGradientSp4.jpeg)
 
-The runif() function allows for a stochastic element to my model, in order to illustrate that a given body type does not necessarily prevent a specific body type from appearing at a given temperature; instead, the probability of existence of a given body type decreases as one moves further from the ideal minimal temperature. In my models, it can be observed that the highest probabilities of existance for a given body type occur at the theoretical temperatures closest to minimal regional temperature at which a given species is observed.
+The runif() function allows for a stochastic element to my model, in order to illustrate that a given body type does not necessarily prevent a species from appearing at a given temperature; instead, the probability of the existence of a given body type decreases as one moves further from the ideal minimal temperature. 
 
-The logistic regression produced the hypothesized trend line that body surface area increases with temperature, as suggested by Allen's Rule. Theoretical-gradient modeling provides a viable visualization of the probabilities that a species exists under given conditions. Across all possible matrices produced and imaged, it is clear that as one moves away from the ideal temperature for a given species body type, the likelihood that the body type will exist at said temperature begins to decrease. Allen's Rule is supported by these results. The implications of my project suggest that if climate change pushed a temperature farther from the ideal temperature for a given morphology, a species will be inclined to alter its body type in order to improve thermoregulation efficiency. If the population is not able to evolve its morphology to match the altered climate, the species risks considerable decline in fitness. 
+The logistic regression produced the hypothesized trend line that body surface area increases with temperature, as suggested by Allen's Rule. The negative slope infers that as a body becomes less "compact" in relation to body proportionality, the warmer the minimal regional temperature becomes for a species. 
 
 ![screenshot](https://raw.githubusercontent.com/Jeru2124/CompBioLabsAndHomework/master/IndependentProjectLab/GraphicalIllustrationOfAllen%E2%80%99sRule.jpeg)
+
+Theoretical-gradient modeling provides a viable visualization of the probabilities that a species exists under given conditions. Across all possible matrices produced and imaged, it is clear that as one moves away from the ideal temperature for a given species' body type, the likelihood that the body type will exist at said temperature begins to decrease. Allen's Rule is thus supported by these results. The ecological implications of my project suggest that if climate change pushes a temperature farther from the ideal temperature for a given morphology, a species will be inclined to alter its body type in order to improve thermoregulation efficiency. If the population is not able to evolve its morphology to match the altered climate, the species risks considerable decline in fitness. It can be observed that form and function of morphology is tightly linked.
+
 
 
 ### **References**
