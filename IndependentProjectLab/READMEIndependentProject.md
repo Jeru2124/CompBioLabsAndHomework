@@ -1,16 +1,16 @@
-## Evidence for Allen's Rule in Aves: Modeling Theoretical Temperature Gradients for Species of Birds given Morphological Proportions
+## Evidence for Allen's Rule Across Species of Aves: Modeling Theoretical Temperature Gradients for Various Species of Birds given Morphological Proportions
 ________________________________
-#### **Biological question**
+### **Biological question**
 
 Does the class Aves show evidence for Allen's rule across multiple species and how does the probability that a species of Aves could exist at a specific climate change across a temperature gradient, given specific morphological proportions?
 
-#### **Context and Introduction**
+### **Context and Introduction**
 
 Evolutionary biologists use Allen’s rule as an explanation for patterns in animal morphology that appear to coordinate with certain climates. A maximization of an organism's external surface area facilitates heat-loss in climates with higher regional temperatures. Conversely, a minimization of body surface area allows for insulation in colder locations. 
 
 Finding and modeling evidence for Allen’s rule via computation aids in our understanding of the relationship between morphological form and function. This project utilizes a theoretical gradient of minimal regional temperatures to illustrate how the probability of existence for a given species varies across the gradient depending on its body morphology. 
 
-#### **Methods**
+### **Methods**
 
 The data retrieved from [Symonds and Tattersall](http://datadryad.org/resource/doi:10.5061/dryad.1421) includes geographical, morphological, and habitat information for 215 species of Aves, across eight families. 
 
@@ -21,9 +21,11 @@ Body mass, minimum temperature at midpoint of species range, and taxonomical nam
 
 
 *Source of the data:*
+
 Symonds MRE, Tattersall GJ (2010) Geographical variation in bill size across bird species provides evidence for Allen’s rule. American Naturalist 176: 188-197. http://dx.doi.org/10.1086/653666
 
 *Dryad Data Package:*
+
 Symonds MRE, Tattersall GJ (2010) Data from: Geographical variation in bill size across bird species provides evidence for Allen’s rule. Dryad Digital Repository. http://dx.doi.org/10.5061/dryad.1421
 
 
@@ -44,7 +46,7 @@ After specifying the focal species to be modeled, I produced a for-loop that run
 The produced matrix of absence/presence data was imaged and combined with the imaged matrix of the theoretical temperature grid to illustrate how the probability that a species exists at a given climate varies along the temperature gradient. The loop can thus be run several times for different focal species by altering the value assigned to the object, focalSpecies, and their graphs can be compared.
 
 
-#### **Results and conclusions**
+### **Results and conclusions**
 
 The runif() function allows for a stochastic element to my model, in order to illustrate that a given body type does not necessarily prevent a specific body type from appearing at a given temperature; instead, the probability of existence of a given body type decreases as one moves further from the ideal minimal temperature. The following graphs depict various generated matrices produced by the loop for different species.
 
@@ -57,5 +59,5 @@ The logistic regression produced the hypothesized trendline that body surface ar
 ![screenshot](https://raw.githubusercontent.com/Jeru2124/CompBioLabsAndHomework/master/IndependentProjectLab/GraphicalIllustrationOfAllen%E2%80%99sRule.jpeg)
 
 
-#### **References**
+### **References**
 Symonds MRE, Tattersall GJ (2010) Geographical variation in bill size across bird species provides evidence for Allen’s rule. American Naturalist 176: 188-197. http://dx.doi.org/10.1086/653666
